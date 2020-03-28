@@ -7,10 +7,10 @@ export class XcpClientImpl extends XcpClientBase {
 
   constructor(serialNumber: string,
               productId: number,
-              productVersion: number,
+              deviceType: string,
               cipher: XcpClientCipher,
               codec: XcpFrameCodecType) {
-    super(serialNumber, productId, productVersion, cipher, codec);
+    super(serialNumber, productId, deviceType, cipher, codec);
   }
 
   protected createWebSocket(url: string): any {
