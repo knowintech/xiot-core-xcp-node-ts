@@ -1,6 +1,5 @@
 import { expect } from 'chai';
 import 'mocha';
-import * as fs from 'async-file';
 
 describe('test', async () => {
 
